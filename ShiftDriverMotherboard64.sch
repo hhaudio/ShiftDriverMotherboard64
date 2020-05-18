@@ -1,0 +1,1047 @@
+EESchema Schematic File Version 4
+LIBS:ShiftDriverMotherboard64-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ShiftDriver:ShiftDriver U1
+U 1 1 5EFE9A52
+P 1450 750
+F 0 "U1" H 1450 915 50  0000 C CNN
+F 1 "ShiftDriver" H 1450 824 50  0000 C CNN
+F 2 "HammerheadAudio:ShiftDriverV0.1" H 1450 750 50  0001 C CNN
+F 3 "" H 1450 750 50  0001 C CNN
+	1    1450 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L MeowWolf_Templates:TEENSY_3.6_MINIMAL U9
+U 1 1 5EFF6702
+P 2400 5750
+F 0 "U9" H 2425 7187 60  0000 C CNN
+F 1 "TEENSY_3.6_MINIMAL" H 2425 7081 60  0000 C CNN
+F 2 "MeowWolf_Templates:TEENSY_3.5_3.6_MINIMAL" H 2300 4800 60  0001 C CNN
+F 3 "" H 2300 4800 60  0000 C CNN
+	1    2400 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5EFFC19D
+P 10650 5200
+F 0 "J1" H 10678 5176 50  0000 L CNN
+F 1 "PWR_SCREWTERM" H 10678 5085 50  0000 L CNN
+F 2 "" H 10650 5200 50  0001 C CNN
+F 3 "~" H 10650 5200 50  0001 C CNN
+	1    10650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5EFFCD6A
+P 10150 5200
+F 0 "SW2" H 10150 5435 50  0000 C CNN
+F 1 "PWR_SW" H 10150 5344 50  0000 C CNN
+F 2 "" H 10150 5200 50  0001 C CNN
+F 3 "~" H 10150 5200 50  0001 C CNN
+	1    10150 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 5200 10450 5200
+$Comp
+L power:GND #PWR032
+U 1 1 5EFFE886
+P 10400 5350
+F 0 "#PWR032" H 10400 5100 50  0001 C CNN
+F 1 "GND" H 10405 5177 50  0000 C CNN
+F 2 "" H 10400 5350 50  0001 C CNN
+F 3 "" H 10400 5350 50  0001 C CNN
+	1    10400 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 5350 10400 5300
+Wire Wire Line
+	10400 5300 10450 5300
+$Comp
+L Device:LED D3
+U 1 1 5EFFF4C7
+P 9650 5850
+F 0 "D3" V 9689 5732 50  0000 R CNN
+F 1 "VDD_IND" V 9598 5732 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 9650 5850 50  0001 C CNN
+F 3 "~" H 9650 5850 50  0001 C CNN
+	1    9650 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F0001CE
+P 9650 5450
+F 0 "R3" H 9720 5496 50  0000 L CNN
+F 1 "220" H 9720 5405 50  0000 L CNN
+F 2 "HammerheadAudio:R_THT_P7.62" V 9580 5450 50  0001 C CNN
+F 3 "~" H 9650 5450 50  0001 C CNN
+	1    9650 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5F000B41
+P 9200 5600
+F 0 "D1" V 9154 5679 50  0000 L CNN
+F 1 "1N4001" V 9245 5679 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 9200 5600 50  0001 C CNN
+F 3 "~" H 9200 5600 50  0001 C CNN
+	1    9200 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 5450 9200 5200
+Wire Wire Line
+	9200 5200 9650 5200
+Wire Wire Line
+	9650 5300 9650 5200
+Connection ~ 9650 5200
+Wire Wire Line
+	9650 5200 9950 5200
+Wire Wire Line
+	9200 5750 9200 6100
+Wire Wire Line
+	9200 6100 9650 6100
+Wire Wire Line
+	9650 6100 9650 6000
+Wire Wire Line
+	9650 5700 9650 5600
+$Comp
+L power:GND #PWR028
+U 1 1 5F002DAD
+P 1250 4600
+F 0 "#PWR028" H 1250 4350 50  0001 C CNN
+F 1 "GND" V 1255 4472 50  0000 R CNN
+F 2 "" H 1250 4600 50  0001 C CNN
+F 3 "" H 1250 4600 50  0001 C CNN
+	1    1250 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 4600 1300 4600
+$Comp
+L power:GND #PWR033
+U 1 1 5F003685
+P 3650 6000
+F 0 "#PWR033" H 3650 5750 50  0001 C CNN
+F 1 "GND" V 3655 5872 50  0000 R CNN
+F 2 "" H 3650 6000 50  0001 C CNN
+F 3 "" H 3650 6000 50  0001 C CNN
+	1    3650 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 6000 3650 6000
+$Comp
+L power:VDD #PWR031
+U 1 1 5F0043DA
+P 9200 5150
+F 0 "#PWR031" H 9200 5000 50  0001 C CNN
+F 1 "VDD" H 9217 5323 50  0000 C CNN
+F 2 "" H 9200 5150 50  0001 C CNN
+F 3 "" H 9200 5150 50  0001 C CNN
+	1    9200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 5200 9200 5150
+Connection ~ 9200 5200
+$Comp
+L Regulator_Linear:LM7805_TO220 U10
+U 1 1 5F005184
+P 7800 5200
+F 0 "U10" H 7800 5442 50  0000 C CNN
+F 1 "LM7805_TO220" H 7800 5351 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7800 5425 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 7800 5150 50  0001 C CNN
+	1    7800 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR030
+U 1 1 5F00660E
+P 6850 5000
+F 0 "#PWR030" H 6850 4850 50  0001 C CNN
+F 1 "VDD" H 6867 5173 50  0000 C CNN
+F 2 "" H 6850 5000 50  0001 C CNN
+F 3 "" H 6850 5000 50  0001 C CNN
+	1    6850 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR034
+U 1 1 5F006F75
+P 8300 6050
+F 0 "#PWR034" H 8300 5800 50  0001 C CNN
+F 1 "GND" H 8305 5877 50  0000 C CNN
+F 2 "" H 8300 6050 50  0001 C CNN
+F 3 "" H 8300 6050 50  0001 C CNN
+	1    8300 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5F0093FC
+P 7200 5100
+F 0 "SW1" H 7200 5385 50  0000 C CNN
+F 1 "5V_SW" H 7200 5294 50  0000 C CNN
+F 2 "" H 7200 5100 50  0001 C CNN
+F 3 "~" H 7200 5100 50  0001 C CNN
+	1    7200 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 5000 6850 5100
+Wire Wire Line
+	6850 5100 7000 5100
+Wire Wire Line
+	7400 5200 7500 5200
+Wire Wire Line
+	7400 5000 7400 4800
+Wire Wire Line
+	7400 4800 8300 4800
+Wire Wire Line
+	8300 4800 8300 5200
+Wire Wire Line
+	8300 5200 8100 5200
+$Comp
+L Device:LED D2
+U 1 1 5F00C527
+P 8300 5800
+F 0 "D2" V 8339 5682 50  0000 R CNN
+F 1 "5V_IND" V 8248 5682 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 8300 5800 50  0001 C CNN
+F 3 "~" H 8300 5800 50  0001 C CNN
+	1    8300 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F00C531
+P 8300 5400
+F 0 "R2" H 8370 5446 50  0000 L CNN
+F 1 "220" H 8370 5355 50  0000 L CNN
+F 2 "HammerheadAudio:R_THT_P7.62" V 8230 5400 50  0001 C CNN
+F 3 "~" H 8300 5400 50  0001 C CNN
+	1    8300 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 6050 8300 6000
+Wire Wire Line
+	8300 5650 8300 5550
+$Comp
+L power:GND #PWR035
+U 1 1 5F00E9ED
+P 9650 6150
+F 0 "#PWR035" H 9650 5900 50  0001 C CNN
+F 1 "GND" H 9655 5977 50  0000 C CNN
+F 2 "" H 9650 6150 50  0001 C CNN
+F 3 "" H 9650 6150 50  0001 C CNN
+	1    9650 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 6150 9650 6100
+Connection ~ 9650 6100
+Wire Wire Line
+	8300 5250 8300 5200
+Connection ~ 8300 5200
+Wire Wire Line
+	8300 6000 7800 6000
+Wire Wire Line
+	7800 5500 7800 6000
+Connection ~ 8300 6000
+Wire Wire Line
+	8300 6000 8300 5950
+$Comp
+L power:+5V #PWR029
+U 1 1 5F029D8B
+P 8300 4750
+F 0 "#PWR029" H 8300 4600 50  0001 C CNN
+F 1 "+5V" H 8315 4923 50  0000 C CNN
+F 2 "" H 8300 4750 50  0001 C CNN
+F 3 "" H 8300 4750 50  0001 C CNN
+	1    8300 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4800 8300 4750
+Connection ~ 8300 4800
+$Comp
+L power:+5V #PWR027
+U 1 1 5F02ACC8
+P 3600 4550
+F 0 "#PWR027" H 3600 4400 50  0001 C CNN
+F 1 "+5V" H 3615 4723 50  0000 C CNN
+F 2 "" H 3600 4550 50  0001 C CNN
+F 3 "" H 3600 4550 50  0001 C CNN
+	1    3600 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4600 3600 4600
+Wire Wire Line
+	3600 4600 3600 4550
+$Comp
+L Device:Q_NPN_EBC Q1
+U 1 1 5F02C600
+P 5550 6400
+F 0 "Q1" H 5741 6446 50  0000 L CNN
+F 1 "Q_NPN_EBC" H 5741 6355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 5750 6500 50  0001 C CNN
+F 3 "~" H 5550 6400 50  0001 C CNN
+	1    5550 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5F02DD85
+P 5650 6650
+F 0 "#PWR026" H 5650 6400 50  0001 C CNN
+F 1 "GND" H 5655 6477 50  0000 C CNN
+F 2 "" H 5650 6650 50  0001 C CNN
+F 3 "" H 5650 6650 50  0001 C CNN
+	1    5650 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 6650 5650 6600
+$Comp
+L power:+5V #PWR017
+U 1 1 5F0305CD
+P 5650 5750
+F 0 "#PWR017" H 5650 5600 50  0001 C CNN
+F 1 "+5V" H 5665 5923 50  0000 C CNN
+F 2 "" H 5650 5750 50  0001 C CNN
+F 3 "" H 5650 5750 50  0001 C CNN
+	1    5650 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F030B67
+P 5650 5950
+F 0 "R1" H 5720 5996 50  0000 L CNN
+F 1 "1k" H 5720 5905 50  0000 L CNN
+F 2 "HammerheadAudio:R_THT_P7.62" V 5580 5950 50  0001 C CNN
+F 3 "~" H 5650 5950 50  0001 C CNN
+	1    5650 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 6200 5650 6150
+Wire Wire Line
+	5650 5800 5650 5750
+Text GLabel 5750 6150 2    50   Input ~ 0
+EN
+Wire Wire Line
+	5650 6150 5750 6150
+Connection ~ 5650 6150
+Wire Wire Line
+	5650 6150 5650 6100
+Text GLabel 5250 6400 0    50   Input ~ 0
+EN_PIN
+Wire Wire Line
+	5250 6400 5350 6400
+Text GLabel 850  1650 0    50   Input ~ 0
+EN
+Wire Wire Line
+	850  1650 900  1650
+Text GLabel 850  1450 0    50   Input ~ 0
+CLR
+Text GLabel 850  1250 0    50   Input ~ 0
+S_CLK
+Text GLabel 850  1050 0    50   Input ~ 0
+CS
+Text GLabel 850  850  0    50   Input ~ 0
+D1
+Text GLabel 2050 850  2    50   Input ~ 0
+D2
+$Comp
+L power:+5V #PWR05
+U 1 1 5F049873
+P 2050 1450
+F 0 "#PWR05" H 2050 1300 50  0001 C CNN
+F 1 "+5V" H 2065 1623 50  0000 C CNN
+F 2 "" H 2050 1450 50  0001 C CNN
+F 3 "" H 2050 1450 50  0001 C CNN
+	1    2050 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR01
+U 1 1 5F04A204
+P 2050 1250
+F 0 "#PWR01" H 2050 1100 50  0001 C CNN
+F 1 "VDD" H 2067 1423 50  0000 C CNN
+F 2 "" H 2050 1250 50  0001 C CNN
+F 3 "" H 2050 1250 50  0001 C CNN
+	1    2050 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5F04AFA2
+P 2050 1650
+F 0 "#PWR09" H 2050 1400 50  0001 C CNN
+F 1 "GND" V 2055 1522 50  0000 R CNN
+F 2 "" H 2050 1650 50  0001 C CNN
+F 3 "" H 2050 1650 50  0001 C CNN
+	1    2050 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  1450 900  1450
+Wire Wire Line
+	850  1250 900  1250
+Wire Wire Line
+	850  1050 900  1050
+Wire Wire Line
+	850  850  900  850 
+Wire Wire Line
+	2000 850  2050 850 
+Wire Wire Line
+	2000 1250 2050 1250
+Wire Wire Line
+	2000 1450 2050 1450
+Wire Wire Line
+	2000 1650 2050 1650
+$Comp
+L ShiftDriver:ShiftDriver U2
+U 1 1 5F059F1C
+P 3350 750
+F 0 "U2" H 3350 915 50  0000 C CNN
+F 1 "ShiftDriver" H 3350 824 50  0000 C CNN
+F 2 "HammerheadAudio:ShiftDriverV0.1" H 3350 750 50  0001 C CNN
+F 3 "" H 3350 750 50  0001 C CNN
+	1    3350 750 
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 1650 0    50   Input ~ 0
+EN
+Wire Wire Line
+	2750 1650 2800 1650
+Text GLabel 2750 1450 0    50   Input ~ 0
+CLR
+Text GLabel 2750 1250 0    50   Input ~ 0
+S_CLK
+Text GLabel 2750 1050 0    50   Input ~ 0
+CS
+Text GLabel 2750 850  0    50   Input ~ 0
+D2
+Text GLabel 3950 850  2    50   Input ~ 0
+D3
+$Comp
+L power:+5V #PWR06
+U 1 1 5F059F2D
+P 3950 1450
+F 0 "#PWR06" H 3950 1300 50  0001 C CNN
+F 1 "+5V" H 3965 1623 50  0000 C CNN
+F 2 "" H 3950 1450 50  0001 C CNN
+F 3 "" H 3950 1450 50  0001 C CNN
+	1    3950 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR02
+U 1 1 5F059F37
+P 3950 1250
+F 0 "#PWR02" H 3950 1100 50  0001 C CNN
+F 1 "VDD" H 3967 1423 50  0000 C CNN
+F 2 "" H 3950 1250 50  0001 C CNN
+F 3 "" H 3950 1250 50  0001 C CNN
+	1    3950 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5F059F41
+P 3950 1650
+F 0 "#PWR010" H 3950 1400 50  0001 C CNN
+F 1 "GND" V 3955 1522 50  0000 R CNN
+F 2 "" H 3950 1650 50  0001 C CNN
+F 3 "" H 3950 1650 50  0001 C CNN
+	1    3950 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 1450 2800 1450
+Wire Wire Line
+	2750 1250 2800 1250
+Wire Wire Line
+	2750 1050 2800 1050
+Wire Wire Line
+	2750 850  2800 850 
+Wire Wire Line
+	3900 850  3950 850 
+Wire Wire Line
+	3900 1250 3950 1250
+Wire Wire Line
+	3900 1450 3950 1450
+Wire Wire Line
+	3900 1650 3950 1650
+$Comp
+L ShiftDriver:ShiftDriver U3
+U 1 1 5F05DAB4
+P 5300 750
+F 0 "U3" H 5300 915 50  0000 C CNN
+F 1 "ShiftDriver" H 5300 824 50  0000 C CNN
+F 2 "HammerheadAudio:ShiftDriverV0.1" H 5300 750 50  0001 C CNN
+F 3 "" H 5300 750 50  0001 C CNN
+	1    5300 750 
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 1650 0    50   Input ~ 0
+EN
+Wire Wire Line
+	4700 1650 4750 1650
+Text GLabel 4700 1450 0    50   Input ~ 0
+CLR
+Text GLabel 4700 1250 0    50   Input ~ 0
+S_CLK
+Text GLabel 4700 1050 0    50   Input ~ 0
+CS
+Text GLabel 4700 850  0    50   Input ~ 0
+D3
+Text GLabel 5900 850  2    50   Input ~ 0
+D4
+$Comp
+L power:+5V #PWR07
+U 1 1 5F05DAC5
+P 5900 1450
+F 0 "#PWR07" H 5900 1300 50  0001 C CNN
+F 1 "+5V" H 5915 1623 50  0000 C CNN
+F 2 "" H 5900 1450 50  0001 C CNN
+F 3 "" H 5900 1450 50  0001 C CNN
+	1    5900 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR03
+U 1 1 5F05DACF
+P 5900 1250
+F 0 "#PWR03" H 5900 1100 50  0001 C CNN
+F 1 "VDD" H 5917 1423 50  0000 C CNN
+F 2 "" H 5900 1250 50  0001 C CNN
+F 3 "" H 5900 1250 50  0001 C CNN
+	1    5900 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5F05DAD9
+P 5900 1650
+F 0 "#PWR011" H 5900 1400 50  0001 C CNN
+F 1 "GND" V 5905 1522 50  0000 R CNN
+F 2 "" H 5900 1650 50  0001 C CNN
+F 3 "" H 5900 1650 50  0001 C CNN
+	1    5900 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 1450 4750 1450
+Wire Wire Line
+	4700 1250 4750 1250
+Wire Wire Line
+	4700 1050 4750 1050
+Wire Wire Line
+	4700 850  4750 850 
+Wire Wire Line
+	5850 850  5900 850 
+Wire Wire Line
+	5850 1250 5900 1250
+Wire Wire Line
+	5850 1450 5900 1450
+Wire Wire Line
+	5850 1650 5900 1650
+$Comp
+L ShiftDriver:ShiftDriver U4
+U 1 1 5F05DAEB
+P 7200 750
+F 0 "U4" H 7200 915 50  0000 C CNN
+F 1 "ShiftDriver" H 7200 824 50  0000 C CNN
+F 2 "HammerheadAudio:ShiftDriverV0.1" H 7200 750 50  0001 C CNN
+F 3 "" H 7200 750 50  0001 C CNN
+	1    7200 750 
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 1650 0    50   Input ~ 0
+EN
+Wire Wire Line
+	6600 1650 6650 1650
+Text GLabel 6600 1450 0    50   Input ~ 0
+CLR
+Text GLabel 6600 1250 0    50   Input ~ 0
+S_CLK
+Text GLabel 6600 1050 0    50   Input ~ 0
+CS
+Text GLabel 6600 850  0    50   Input ~ 0
+D4
+Text GLabel 7800 850  2    50   Input ~ 0
+D5
+$Comp
+L power:+5V #PWR08
+U 1 1 5F05DAFC
+P 7800 1450
+F 0 "#PWR08" H 7800 1300 50  0001 C CNN
+F 1 "+5V" H 7815 1623 50  0000 C CNN
+F 2 "" H 7800 1450 50  0001 C CNN
+F 3 "" H 7800 1450 50  0001 C CNN
+	1    7800 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR04
+U 1 1 5F05DB06
+P 7800 1250
+F 0 "#PWR04" H 7800 1100 50  0001 C CNN
+F 1 "VDD" H 7817 1423 50  0000 C CNN
+F 2 "" H 7800 1250 50  0001 C CNN
+F 3 "" H 7800 1250 50  0001 C CNN
+	1    7800 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5F05DB10
+P 7800 1650
+F 0 "#PWR012" H 7800 1400 50  0001 C CNN
+F 1 "GND" V 7805 1522 50  0000 R CNN
+F 2 "" H 7800 1650 50  0001 C CNN
+F 3 "" H 7800 1650 50  0001 C CNN
+	1    7800 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 1450 6650 1450
+Wire Wire Line
+	6600 1250 6650 1250
+Wire Wire Line
+	6600 1050 6650 1050
+Wire Wire Line
+	6600 850  6650 850 
+Wire Wire Line
+	7750 850  7800 850 
+Wire Wire Line
+	7750 1250 7800 1250
+Wire Wire Line
+	7750 1450 7800 1450
+Wire Wire Line
+	7750 1650 7800 1650
+$Comp
+L ShiftDriver:ShiftDriver U5
+U 1 1 5F063E04
+P 1450 2100
+F 0 "U5" H 1450 2265 50  0000 C CNN
+F 1 "ShiftDriver" H 1450 2174 50  0000 C CNN
+F 2 "HammerheadAudio:ShiftDriverV0.1" H 1450 2100 50  0001 C CNN
+F 3 "" H 1450 2100 50  0001 C CNN
+	1    1450 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 850  3000 0    50   Input ~ 0
+EN
+Wire Wire Line
+	850  3000 900  3000
+Text GLabel 850  2800 0    50   Input ~ 0
+CLR
+Text GLabel 850  2600 0    50   Input ~ 0
+S_CLK
+Text GLabel 850  2400 0    50   Input ~ 0
+CS
+Text GLabel 850  2200 0    50   Input ~ 0
+D5
+Text GLabel 2050 2200 2    50   Input ~ 0
+D6
+$Comp
+L power:+5V #PWR018
+U 1 1 5F063E15
+P 2050 2800
+F 0 "#PWR018" H 2050 2650 50  0001 C CNN
+F 1 "+5V" H 2065 2973 50  0000 C CNN
+F 2 "" H 2050 2800 50  0001 C CNN
+F 3 "" H 2050 2800 50  0001 C CNN
+	1    2050 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR013
+U 1 1 5F063E1F
+P 2050 2600
+F 0 "#PWR013" H 2050 2450 50  0001 C CNN
+F 1 "VDD" H 2067 2773 50  0000 C CNN
+F 2 "" H 2050 2600 50  0001 C CNN
+F 3 "" H 2050 2600 50  0001 C CNN
+	1    2050 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5F063E29
+P 2050 3000
+F 0 "#PWR022" H 2050 2750 50  0001 C CNN
+F 1 "GND" V 2055 2872 50  0000 R CNN
+F 2 "" H 2050 3000 50  0001 C CNN
+F 3 "" H 2050 3000 50  0001 C CNN
+	1    2050 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  2800 900  2800
+Wire Wire Line
+	850  2600 900  2600
+Wire Wire Line
+	850  2400 900  2400
+Wire Wire Line
+	850  2200 900  2200
+Wire Wire Line
+	2000 2200 2050 2200
+Wire Wire Line
+	2000 2600 2050 2600
+Wire Wire Line
+	2000 2800 2050 2800
+Wire Wire Line
+	2000 3000 2050 3000
+$Comp
+L ShiftDriver:ShiftDriver U6
+U 1 1 5F063E3B
+P 3350 2100
+F 0 "U6" H 3350 2265 50  0000 C CNN
+F 1 "ShiftDriver" H 3350 2174 50  0000 C CNN
+F 2 "HammerheadAudio:ShiftDriverV0.1" H 3350 2100 50  0001 C CNN
+F 3 "" H 3350 2100 50  0001 C CNN
+	1    3350 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 3000 0    50   Input ~ 0
+EN
+Wire Wire Line
+	2750 3000 2800 3000
+Text GLabel 2750 2800 0    50   Input ~ 0
+CLR
+Text GLabel 2750 2600 0    50   Input ~ 0
+S_CLK
+Text GLabel 2750 2400 0    50   Input ~ 0
+CS
+Text GLabel 2750 2200 0    50   Input ~ 0
+D6
+Text GLabel 3950 2200 2    50   Input ~ 0
+D7
+$Comp
+L power:+5V #PWR019
+U 1 1 5F063E4C
+P 3950 2800
+F 0 "#PWR019" H 3950 2650 50  0001 C CNN
+F 1 "+5V" H 3965 2973 50  0000 C CNN
+F 2 "" H 3950 2800 50  0001 C CNN
+F 3 "" H 3950 2800 50  0001 C CNN
+	1    3950 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR014
+U 1 1 5F063E56
+P 3950 2600
+F 0 "#PWR014" H 3950 2450 50  0001 C CNN
+F 1 "VDD" H 3967 2773 50  0000 C CNN
+F 2 "" H 3950 2600 50  0001 C CNN
+F 3 "" H 3950 2600 50  0001 C CNN
+	1    3950 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 5F063E60
+P 3950 3000
+F 0 "#PWR023" H 3950 2750 50  0001 C CNN
+F 1 "GND" V 3955 2872 50  0000 R CNN
+F 2 "" H 3950 3000 50  0001 C CNN
+F 3 "" H 3950 3000 50  0001 C CNN
+	1    3950 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 2800 2800 2800
+Wire Wire Line
+	2750 2600 2800 2600
+Wire Wire Line
+	2750 2400 2800 2400
+Wire Wire Line
+	2750 2200 2800 2200
+Wire Wire Line
+	3900 2200 3950 2200
+Wire Wire Line
+	3900 2600 3950 2600
+Wire Wire Line
+	3900 2800 3950 2800
+Wire Wire Line
+	3900 3000 3950 3000
+$Comp
+L ShiftDriver:ShiftDriver U7
+U 1 1 5F063E72
+P 5300 2100
+F 0 "U7" H 5300 2265 50  0000 C CNN
+F 1 "ShiftDriver" H 5300 2174 50  0000 C CNN
+F 2 "HammerheadAudio:ShiftDriverV0.1" H 5300 2100 50  0001 C CNN
+F 3 "" H 5300 2100 50  0001 C CNN
+	1    5300 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 3000 0    50   Input ~ 0
+EN
+Wire Wire Line
+	4700 3000 4750 3000
+Text GLabel 4700 2800 0    50   Input ~ 0
+CLR
+Text GLabel 4700 2600 0    50   Input ~ 0
+S_CLK
+Text GLabel 4700 2400 0    50   Input ~ 0
+CS
+Text GLabel 4700 2200 0    50   Input ~ 0
+D7
+Text GLabel 5900 2200 2    50   Input ~ 0
+D8
+$Comp
+L power:+5V #PWR020
+U 1 1 5F063E83
+P 5900 2800
+F 0 "#PWR020" H 5900 2650 50  0001 C CNN
+F 1 "+5V" H 5915 2973 50  0000 C CNN
+F 2 "" H 5900 2800 50  0001 C CNN
+F 3 "" H 5900 2800 50  0001 C CNN
+	1    5900 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR015
+U 1 1 5F063E8D
+P 5900 2600
+F 0 "#PWR015" H 5900 2450 50  0001 C CNN
+F 1 "VDD" H 5917 2773 50  0000 C CNN
+F 2 "" H 5900 2600 50  0001 C CNN
+F 3 "" H 5900 2600 50  0001 C CNN
+	1    5900 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 5F063E97
+P 5900 3000
+F 0 "#PWR024" H 5900 2750 50  0001 C CNN
+F 1 "GND" V 5905 2872 50  0000 R CNN
+F 2 "" H 5900 3000 50  0001 C CNN
+F 3 "" H 5900 3000 50  0001 C CNN
+	1    5900 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 2800 4750 2800
+Wire Wire Line
+	4700 2600 4750 2600
+Wire Wire Line
+	4700 2400 4750 2400
+Wire Wire Line
+	4700 2200 4750 2200
+Wire Wire Line
+	5850 2200 5900 2200
+Wire Wire Line
+	5850 2600 5900 2600
+Wire Wire Line
+	5850 2800 5900 2800
+Wire Wire Line
+	5850 3000 5900 3000
+$Comp
+L ShiftDriver:ShiftDriver U8
+U 1 1 5F063EA9
+P 7200 2100
+F 0 "U8" H 7200 2265 50  0000 C CNN
+F 1 "ShiftDriver" H 7200 2174 50  0000 C CNN
+F 2 "HammerheadAudio:ShiftDriverV0.1" H 7200 2100 50  0001 C CNN
+F 3 "" H 7200 2100 50  0001 C CNN
+	1    7200 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 3000 0    50   Input ~ 0
+EN
+Wire Wire Line
+	6600 3000 6650 3000
+Text GLabel 6600 2800 0    50   Input ~ 0
+CLR
+Text GLabel 6600 2600 0    50   Input ~ 0
+S_CLK
+Text GLabel 6600 2400 0    50   Input ~ 0
+CS
+Text GLabel 6600 2200 0    50   Input ~ 0
+D8
+$Comp
+L power:+5V #PWR021
+U 1 1 5F063EBA
+P 7800 2800
+F 0 "#PWR021" H 7800 2650 50  0001 C CNN
+F 1 "+5V" H 7815 2973 50  0000 C CNN
+F 2 "" H 7800 2800 50  0001 C CNN
+F 3 "" H 7800 2800 50  0001 C CNN
+	1    7800 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR016
+U 1 1 5F063EC4
+P 7800 2600
+F 0 "#PWR016" H 7800 2450 50  0001 C CNN
+F 1 "VDD" H 7817 2773 50  0000 C CNN
+F 2 "" H 7800 2600 50  0001 C CNN
+F 3 "" H 7800 2600 50  0001 C CNN
+	1    7800 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 5F063ECE
+P 7800 3000
+F 0 "#PWR025" H 7800 2750 50  0001 C CNN
+F 1 "GND" V 7805 2872 50  0000 R CNN
+F 2 "" H 7800 3000 50  0001 C CNN
+F 3 "" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 2800 6650 2800
+Wire Wire Line
+	6600 2600 6650 2600
+Wire Wire Line
+	6600 2400 6650 2400
+Wire Wire Line
+	6600 2200 6650 2200
+Wire Wire Line
+	7750 2600 7800 2600
+Wire Wire Line
+	7750 2800 7800 2800
+Wire Wire Line
+	7750 3000 7800 3000
+NoConn ~ 7750 2200
+$Comp
+L CD74HC243:CD74HC243 U11
+U 1 1 5F08F22B
+P 9750 1300
+F 0 "U11" H 9750 1465 50  0000 C CNN
+F 1 "CD74HC243" H 9750 1374 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9750 1550 50  0001 C CNN
+F 3 "" H 9750 1550 50  0001 C CNN
+	1    9750 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5F0912F4
+P 10300 1350
+F 0 "#PWR0101" H 10300 1200 50  0001 C CNN
+F 1 "+5V" H 10315 1523 50  0000 C CNN
+F 2 "" H 10300 1350 50  0001 C CNN
+F 3 "" H 10300 1350 50  0001 C CNN
+	1    10300 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F091DDA
+P 10400 1700
+F 0 "#PWR0102" H 10400 1450 50  0001 C CNN
+F 1 "GND" V 10405 1572 50  0000 R CNN
+F 2 "" H 10400 1700 50  0001 C CNN
+F 3 "" H 10400 1700 50  0001 C CNN
+	1    10400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F0968D5
+P 9100 1450
+F 0 "#PWR0103" H 9100 1200 50  0001 C CNN
+F 1 "GND" V 9105 1322 50  0000 R CNN
+F 2 "" H 9100 1450 50  0001 C CNN
+F 3 "" H 9100 1450 50  0001 C CNN
+	1    9100 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 1400 10300 1400
+Wire Wire Line
+	10300 1400 10300 1350
+Wire Wire Line
+	10250 1650 10400 1650
+Wire Wire Line
+	10400 1650 10400 1700
+Wire Wire Line
+	9100 1450 9100 1400
+Wire Wire Line
+	9100 1400 9250 1400
+Text GLabel 9150 2650 0    50   Input ~ 0
+CLR_PIN
+Text GLabel 10350 2900 2    50   Input ~ 0
+CLR
+$Comp
+L power:GND #PWR0104
+U 1 1 5F0A4FBA
+P 9150 2950
+F 0 "#PWR0104" H 9150 2700 50  0001 C CNN
+F 1 "GND" V 9155 2822 50  0000 R CNN
+F 2 "" H 9150 2950 50  0001 C CNN
+F 3 "" H 9150 2950 50  0001 C CNN
+	1    9150 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 2950 9150 2900
+Wire Wire Line
+	9150 2900 9250 2900
+Wire Wire Line
+	9150 2650 9250 2650
+Wire Wire Line
+	10250 2900 10350 2900
+Text GLabel 9150 1900 0    50   Input ~ 0
+DAT_PIN
+Text GLabel 9150 2150 0    50   Input ~ 0
+CLK_PIN
+Text GLabel 9150 2400 0    50   Input ~ 0
+CS_PIN
+Text GLabel 10350 2650 2    50   Input ~ 0
+CS
+Text GLabel 10350 2400 2    50   Input ~ 0
+S_CLK
+Text GLabel 10350 2150 2    50   Input ~ 0
+D1
+Wire Wire Line
+	9150 1900 9250 1900
+Wire Wire Line
+	9150 2150 9250 2150
+Wire Wire Line
+	9150 2400 9250 2400
+Wire Wire Line
+	10250 2150 10350 2150
+Wire Wire Line
+	10250 2400 10350 2400
+Wire Wire Line
+	10250 2650 10350 2650
+$EndSCHEMATC
