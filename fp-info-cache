@@ -1,4 +1,4 @@
-17693922896765974
+17809997552715974
 Aesthetics
 BREADBOARD_SPACING
 BREADBOARD SPACING
@@ -48552,7 +48552,21 @@ Diode DO-34_SOD68 series Axial Horizontal pin pitch 7.62mm  length 3.04mm diamet
 2
 2
 HammerheadAudio
+EAPLRAA4
+
+
+0
+5
+3
+HammerheadAudio
 EuroJack_MonoSW_THT
+
+
+0
+3
+3
+HammerheadAudio
+EuroJack_MonoSW_THT_Bothsides_NoRef
 
 
 0
@@ -48650,6 +48664,13 @@ LED diameter 3.0mm 2 pins
 2
 2
 HammerheadAudio
+LED_D5.0mm_BothSides
+LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf
+LED diameter 5.0mm 2 pins
+0
+2
+2
+HammerheadAudio
 M3_MOUNT
 STANDOFF (#4 SCREW)
 STANDOFF (#4 SCREW)
@@ -48741,6 +48762,13 @@ phoenix_contact connector MCV_01x02_G_3.81mm
 4
 2
 HammerheadAudio
+PinHeader_1x06_P2.54mm_Vertical_Front
+Through hole straight pin header, 1x06, 2.54mm pitch, single row
+Through hole pin header THT 1x06 2.54mm single row
+0
+6
+6
+HammerheadAudio
 PT-6-V_FixedPads
 Potentiometer, vertical, Piher PT-6-V, http://www.piher-nacesa.com/pdf/11-PT6v03.pdf
 Potentiometer vertical Piher PT-6-V
@@ -48783,6 +48811,41 @@ Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W len
 2
 2
 HammerheadAudio
+R_THT_P7.62_Back
+Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm
+0
+2
+2
+HammerheadAudio
+R_THT_P7.62_Bothsides
+Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm
+0
+2
+2
+HammerheadAudio
+ScrewTerm+Phoenix
+
+
+0
+0
+0
+HammerheadAudio
+ScrewTerm+Phoenix_30A_7.62mm_1x2
+
+
+0
+8
+2
+HammerheadAudio
+ScrewTerm_7.62_CUI
+
+
+0
+2
+2
+HammerheadAudio
 ShiftDriverV0.1
 
 
@@ -48791,6 +48854,20 @@ ShiftDriverV0.1
 9
 HammerheadAudio
 Speaker-DBU-SM420608-1
+
+
+0
+4
+2
+HammerheadAudio
+Speaker-DBU-SM420608-1_Back
+
+
+0
+4
+2
+HammerheadAudio
+Speaker-DBU-SM420608-1_BothSides
 
 
 0
@@ -48812,6 +48889,13 @@ Potentiometer vertical Bourns PTV09A-1 Single
 3
 HammerheadAudio
 Tayda_Slide_SPDT
+
+
+0
+5
+3
+HammerheadAudio
+Tayda_Slide_SPDT_BothSides
 
 
 0
@@ -72499,6 +72583,34 @@ WSON8-6X5MM
 9
 9
 Skelly
+BorosFrameScale_1
+
+
+0
+0
+0
+Skelly
+BorosFrame_Neg
+
+
+0
+0
+0
+Skelly
+BorosFrame_Neg2
+
+
+0
+0
+0
+Skelly
+BorosFrame_Wavy
+
+
+0
+0
+0
+Skelly
 BuiltIn_Fish
 
 
@@ -72583,6 +72695,48 @@ ear_3.45x5.83mm_back
 0
 0
 Skelly
+Ear_Smooth_3.4x5.8mm
+
+
+0
+0
+0
+Skelly
+Ear_Smooth_3.4x5.8mm_BothSides
+
+
+0
+0
+0
+Skelly
+FallingAngel_SmoothThicc_5.9x5.8mm
+
+
+0
+0
+0
+Skelly
+FallingAngel_SmoothThin_5.9x5.8mm
+
+
+0
+0
+0
+Skelly
+FallingAngel_Smooth_5.9x5.8mm
+
+
+0
+0
+0
+Skelly
+FallingAngel_Smooth_5.9x5.8mm_BothSides
+
+
+0
+0
+0
+Skelly
 falling_angel_4.1x4mm_mask
 
 
@@ -72646,6 +72800,34 @@ fish_12x5mm_silk
 0
 0
 Skelly
+FloralFrame_KnaveOfWorry
+
+
+0
+0
+0
+Skelly
+FloralFrame_Ouroboros
+
+
+0
+0
+0
+Skelly
+FloralFrame_Smooth
+
+
+0
+0
+0
+Skelly
+FloralFrame_Smooth_Back
+
+
+0
+0
+0
+Skelly
 floral_lores
 
 
@@ -72682,6 +72864,34 @@ floral_lores_courtyard_half1
 0
 Skelly
 floral_lores_courtyard_half2
+
+
+0
+0
+0
+Skelly
+Floral_Smoothed
+
+
+0
+0
+0
+Skelly
+Floral_Smooth_HTile
+
+
+0
+0
+0
+Skelly
+Floral_Smooth_Tile
+
+
+0
+0
+0
+Skelly
+Floral_Smooth_VTile
 
 
 0
@@ -72800,6 +73010,20 @@ hand1_small
 0
 0
 Skelly
+Hand1_Smooth_2.9x5.8mm
+
+
+0
+0
+0
+Skelly
+Hand1_Smooth_2.9x5.8mm_BothSides
+
+
+0
+0
+0
+Skelly
 hand2_small
 
 
@@ -72884,6 +73108,20 @@ hourglass_small_back
 0
 0
 Skelly
+Hourglass_Smooth_3.3x5.7mm
+
+
+0
+0
+0
+Skelly
+Hourglass_Smooth_3.3x5.8mm
+
+
+0
+0
+0
+Skelly
 keys_crossed_5.75x5.1mm
 
 
@@ -72899,6 +73137,20 @@ key_5.6x5.1mm
 0
 Skelly
 key_5.6x5.1mm_orbus
+
+
+0
+0
+0
+Skelly
+Key_Smooth_2.6x5.5mm
+
+
+0
+0
+0
+Skelly
+Key_Smooth_2.6x5.5mm_BothSides
 
 
 0
@@ -73045,6 +73297,153 @@ lobster_3.69x5.625mm_silk
 0
 0
 Skelly
+Opto_Angel_5.8x5.7mm
+
+
+0
+0
+0
+Skelly
+Opto_Angel_5.8x5.7mm_Mask
+
+
+0
+0
+0
+Skelly
+Opto_Bunny_3.4x5.5mm_Mask
+
+
+0
+0
+0
+Skelly
+Opto_Bunny_3.4x5.5mm_Silk
+
+
+0
+0
+0
+Skelly
+Opto_Fish_12x5mm_Mask
+
+
+0
+0
+0
+Skelly
+Opto_Fish_12x5mm_Silk
+
+
+0
+0
+0
+Skelly
+Opto_Gem_2.8x5.5mm_Mask
+
+
+0
+0
+0
+Skelly
+Opto_Gem_2.8x5.5mm_Silk
+
+
+0
+0
+0
+Skelly
+Opto_HandOpen_7.63x8.3mm_Silk
+
+
+0
+0
+0
+Skelly
+Opto_Lobster_3.7x5.6mm_Mask
+
+
+0
+0
+0
+Skelly
+Opto_Lobster_3.7x5.6mm_Silk
+
+
+0
+0
+0
+Skelly
+Opto_Plant_3.8x5.6mm_Mask
+
+
+0
+0
+0
+Skelly
+Opto_Plant_3.8x5.6mm_Silk
+
+
+0
+0
+0
+Skelly
+Opto_Pointer1_3.4x8.2mm_Silk
+
+
+0
+0
+0
+Skelly
+Opto_Pointer2_3.4x8.2mm_Silk
+
+
+0
+0
+0
+Skelly
+Opto_Skelly_2.8x5.7mm_Mask
+
+
+0
+0
+0
+Skelly
+Opto_Skelly_2.8x5.7mm_Silk
+
+
+0
+0
+0
+Skelly
+Opto_Swordguy_3.1x5.7mm_Mask
+
+
+0
+0
+0
+Skelly
+Opto_Swordguy_3.1x5.7mm_Silk
+
+
+0
+0
+0
+Skelly
+Opto_Swordguy_3.1x5.8mm_Mask
+
+
+0
+0
+0
+Skelly
+Opto_Swordguy_3.1x5.8mm_Silk
+
+
+0
+0
+0
+Skelly
 Ouroboros_132.5mm_140.6mm
 
 
@@ -73088,6 +73487,20 @@ Ouroboros_Inf_18.5x33.5mm
 0
 Skelly
 Ouroboros_Scales_179x190mm
+
+
+0
+0
+0
+Skelly
+Ouroboros_Scales_179x190mm_edit
+
+
+0
+0
+0
+Skelly
+Ouroboros_Scales_179x190mm_Opto
 
 
 0
@@ -73143,6 +73556,13 @@ pointer1_4.85x11.7mm
 0
 0
 Skelly
+Pointer1_Smooth_4.8x11.7mm_BothSides
+
+
+0
+0
+0
+Skelly
 pointer2_3.4x8.2mm
 
 
@@ -73151,6 +73571,62 @@ pointer2_3.4x8.2mm
 0
 Skelly
 pointer2_4.85x11.7mm
+
+
+0
+0
+0
+Skelly
+Pointer2_Smooth_4.7x11.7mm
+
+
+0
+0
+0
+Skelly
+Pointer2_Smooth_4.7x11.7mm_BothSides
+
+
+0
+0
+0
+Skelly
+Pointer_Smooth_4.8x11.7mm
+
+
+0
+0
+0
+Skelly
+ScalePattern_10x10mm
+
+
+0
+0
+0
+Skelly
+ScalePattern_Small
+
+
+0
+0
+0
+Skelly
+ScalePattern_Test2
+
+
+0
+0
+0
+Skelly
+ScalePattern_Zoom
+
+
+0
+0
+0
+Skelly
+ScalePattern_ZoomSmall
 
 
 0
@@ -73193,6 +73669,20 @@ shushinghead_5.02x4.27mm_poof_back
 0
 Skelly
 shushinghead_5.74x4.88mm
+
+
+0
+0
+0
+Skelly
+ShushingHead_Smooth_5x4.3mm
+
+
+0
+0
+0
+Skelly
+ShushingHead_Smooth_5x4.3mm_Back
 
 
 0
@@ -73263,6 +73753,27 @@ speakinghead_5.74x4.88mm
 0
 Skelly
 speakinghead_6.46x5.5mm
+
+
+0
+0
+0
+Skelly
+SpeakingHead_Smooth_5x4.3mm
+
+
+0
+0
+0
+Skelly
+SpeakingHead_Smooth_5x4.3mm_Back
+
+
+0
+0
+0
+Skelly
+SpeakingHead_Smooth_5x4.3mm_BothSides
 
 
 0
