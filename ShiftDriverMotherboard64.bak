@@ -145,7 +145,7 @@ F 1 "1k" H 5820 6305 50  0000 L CNN
 F 2 "HammerheadAudio:R_THT_P7.62" V 5680 6350 50  0001 C CNN
 F 3 "~" H 5750 6350 50  0001 C CNN
 	1    5750 6350
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	5750 6200 5750 6150
@@ -1553,7 +1553,7 @@ L Connector:Conn_01x02_Female J1
 U 1 1 5EFFC19D
 P 10000 4100
 F 0 "J1" H 10028 4076 50  0000 L CNN
-F 1 "V_SPK_IN" H 10028 3985 50  0000 L CNN
+F 1 "- V_SPK_IN +" H 10028 3985 50  0000 L CNN
 F 2 "HammerheadAudio:ScrewTerm+Phoenix_30A_7.62mm_1x2" H 10000 4100 50  0001 C CNN
 F 3 "~" H 10000 4100 50  0001 C CNN
 	1    10000 4100
@@ -1644,7 +1644,7 @@ F 3 "~" H 5850 5500 50  0001 C CNN
 	1    5850 5500
 	1    0    0    -1  
 $EndComp
-Text GLabel 5450 5500 0    50   Input ~ 0
+Text GLabel 6550 5500 2    50   Input ~ 0
 BOOT_IND1
 Wire Wire Line
 	5450 5500 5550 5500
@@ -1659,7 +1659,7 @@ F 3 "~" H 6350 5500 50  0001 C CNN
 	1    6350 5500
 	0    -1   -1   0   
 $EndComp
-Text GLabel 6550 5500 2    50   Input ~ 0
+Text GLabel 5450 5500 0    50   Input ~ 0
 BOOT_IND2
 Wire Wire Line
 	6500 5500 6550 5500
